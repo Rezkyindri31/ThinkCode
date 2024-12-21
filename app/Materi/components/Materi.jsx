@@ -29,7 +29,7 @@ const ClassroomDashboard = () => {
                         <ListItem
                             key={task}
                             onClick={() => handleTaskClick(task)}
-                            className={`cursor-pointer py-2 px-4 rounded-md mb-2 transition-all duration-200 ${selectedTask === task ? "bg-blue-500 text-white" : "bg-transparent"
+                            className={`cursor-pointer py-2 rounded-md mb-2 text-md transition-all duration-200 ${selectedTask === task ? "bg-blue-500 text-white" : "bg-transparent"
                                 }`}
                         >
                             <ListItemPrefix>📂</ListItemPrefix>
@@ -45,9 +45,7 @@ const ClassroomDashboard = () => {
                 <div className="mt-6">
                     <Card className="mb-4 shadow-sm">
                         <CardBody>
-                            <Typography className="text-gray-800">
-                                {taskContent[selectedTask]}
-                            </Typography>
+                            {taskContent[selectedTask]}
                         </CardBody>
                     </Card>
                 </div>

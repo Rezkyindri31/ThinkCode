@@ -1,13 +1,16 @@
 import { useState } from "react";
 import Task1 from "@/app/Materi/components/Task1";
+import Task2 from "@/app/Materi/components/Task2";
 
 const useTaskSelection = () => {
-  const [selectedTask, setSelectedTask] = useState("PRAK. IPL-DSE-C");
+  const [selectedTask, setSelectedTask] = useState(
+    "Algoritma: Pengertian, Karakteristik, dan Contoh Sederhana"
+  );
 
   // Daftar tugas yang akan ditampilkan di sidebar
   const tasks = [
-    "Data Warehouse and Data Mining",
-    "PRAK. IPL-DSE-C",
+    "Algoritma: Pengertian, Karakteristik, dan Contoh Sederhana",
+    "Struktur Algoritma",
     "Prak. Manpro DSE-C",
     "Manajemen Proyek",
     "Praktikum Sistem Operasi (E)",
@@ -15,9 +18,8 @@ const useTaskSelection = () => {
 
   // Konten yang terkait dengan setiap tugas
   const taskContent = {
-    "Data Warehouse and Data Mining": <Task1 />,
-    "PRAK. IPL-DSE-C":
-      "Siddiq Ahmad Anshori memposting tugas baru: Laporan Akhir Praktikum Modul 6",
+    "Algoritma: Pengertian, Karakteristik, dan Contoh Sederhana": <Task1 />,
+    "Struktur Algoritma": <Task2 />,
     "Prak. Manpro DSE-C":
       "Tugas ini berkaitan dengan perancangan dan pengelolaan proyek manajemen perangkat lunak.",
     "Manajemen Proyek":
