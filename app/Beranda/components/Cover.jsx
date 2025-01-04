@@ -3,7 +3,7 @@ import React from "react";
 import Image from "next/image";
 import { Typography, Button } from "@/app/MTailwind";
 import useNavbarAktif from "@/hooks/useNavbarAktif";
-import Logo from "@/assets/img/Logo.jpg";
+import Logo from "@/assets/img/Logo.png";
 
 const ThinkCodeCover = () => {
     const { handlenavbarAktif } = useNavbarAktif();

@@ -1,31 +1,32 @@
 import { useState } from "react";
-import Task1 from "@/app/Materi/components/Task1";
-import Task2 from "@/app/Materi/components/Task2";
+import Task1 from "@/app/Materi/components/PengenalanAlprog";
+import Task2 from "@/app/Materi/components/StrukturAlgoritma";
+import Task3 from "@/app/Materi/components/DasarPemrograman";
+import Task4 from "@/app/Materi/components/Percabangan";
+import Task5 from "@/app/Materi/components/Perulangan";
 
 const useTaskSelection = () => {
   const [selectedTask, setSelectedTask] = useState(
-    "Algoritma: Pengertian, Karakteristik, dan Contoh Sederhana"
+    "Pengenalan Algoritma dan Pemrograman"
   );
 
-  // Daftar tugas yang akan ditampilkan di sidebar
   const tasks = [
-    "Algoritma: Pengertian, Karakteristik, dan Contoh Sederhana",
+    "Pengenalan Algoritma dan Pemrograman",
     "Struktur Algoritma",
-    "Prak. Manpro DSE-C",
-    "Manajemen Proyek",
-    "Praktikum Sistem Operasi (E)",
+    "Dasar Pemrograman",
+    "Percabangan (Selection)",
+    "Perulangan (Iteration)",
+    "Fungsi",
   ];
 
-  // Konten yang terkait dengan setiap tugas
   const taskContent = {
-    "Algoritma: Pengertian, Karakteristik, dan Contoh Sederhana": <Task1 />,
+    "Pengenalan Algoritma dan Pemrograman": <Task1 />,
     "Struktur Algoritma": <Task2 />,
-    "Prak. Manpro DSE-C":
-      "Tugas ini berkaitan dengan perancangan dan pengelolaan proyek manajemen perangkat lunak.",
-    "Manajemen Proyek":
-      "Tugas ini melibatkan analisis dan perencanaan proyek besar, termasuk manajemen risiko.",
-    "Praktikum Sistem Operasi (E)":
-      "Tugas ini berfokus pada pengelolaan sistem operasi dan pengembangan aplikasi berbasis sistem operasi.",
+    "Dasar Pemrograman": <Task3 />,
+    "Percabangan (Selection)": <Task4 />,
+    "Perulangan (Iteration)": <Task5 />,
+    Fungsi:
+      "Tugas ini berkaitan dengan pengembangan aplikasi berbasis web dan pengelolaan sistem operasi.",
   };
 
   const handleTaskClick = (task) => {
