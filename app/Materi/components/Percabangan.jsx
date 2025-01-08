@@ -10,8 +10,8 @@ import { PercabanganTableLabel, PercabanganTableIsian } from "@/components/dataP
 function Task4() {
     return (
         <div className="w-full my-4 space-y-4">
-            <Typography variant="paragraph" className="text-justify indent-8">
-                Percabangan adalah proses pengambilan keputusan dalam program. Pernyataan if-else digunakan untuk menjalankan kode tertentu jika suatu kondisi terpenuhi, dan kode lainnya jika tidak. Jika terdapat lebih dari satu kondisi yang harus diperiksa, nested if digunakan.
+            <Typography variant="lead" className="text-justify indent-8">
+                <span className="font-bold"> Percabangan</span> adalah proses pengambilan keputusan dalam program. Pernyataan if-else digunakan untuk menjalankan kode tertentu jika suatu kondisi terpenuhi, dan kode lainnya jika tidak. Jika terdapat lebih dari satu kondisi yang harus diperiksa, nested if digunakan.
             </Typography>
             <Card className="h-full w-full overflow-scroll">
                 <table className="w-full min-w-max table-auto text-left">
@@ -92,7 +92,7 @@ function Task4() {
                 </table>
             </Card>
             <div className="w-full my-4">
-                <Typography variant="paragraph" className="text-justify indent-8">
+                <Typography variant="lead" className="text-justify indent-8">
                     Contoh program percabangan adalah menentukan apakah angka yang dimasukkan pengguna merupakan bilangan genap atau ganjil:
                 </Typography>
                 <div className="flex items-center justify-center gap-0">

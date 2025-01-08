@@ -8,7 +8,7 @@ function Task3() {
     return (
         <div className="w-full my-4 space-y-4">
             <>
-                <Typography variant="paragraph" className="text-justify indent-8">
+                <Typography variant="lead" className="text-justify indent-8">
                     Dasar pemrograman mencakup penyusunan struktur program sederhana yang melibatkan deklarasi variabel, input, dan output. Variabel digunakan untuk menyimpan data dengan tipe tertentu, seperti integer, float, string, dan boolean.
                 </Typography>
                 <Card className="h-full w-full overflow-scroll">
@@ -91,7 +91,7 @@ function Task3() {
                 </Card>
             </>
             <>
-                <Typography variant="paragraph" className="text-justify indent-8">
+                <Typography variant="lead" className="text-justify indent-8">
                     Operasi dasar dalam pemrograman meliputi aritmatika (penjumlahan, pengurangan), perbandingan (lebih besar, lebih kecil), dan logika (AND, OR, NOT).
                 </Typography>
                 <Card className="h-full w-full overflow-scroll">

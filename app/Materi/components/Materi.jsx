@@ -26,7 +26,7 @@ const ClassroomDashboard = () => {
                         </Typography>
                     </div>
                     <List>
-                        <Typography className="text-gray-500 text-sm py-2">Daftar tugas</Typography>
+                        <Typography className="text-gray-500 text-sm py-2">Daftar Materi</Typography>
                         {tasks.map((task) => (
                             <ListItem
                                 key={task}
@@ -45,14 +45,14 @@ const ClassroomDashboard = () => {
                         <Typography variant="h4">{selectedTask}</Typography>
                     </div>
                     <div className="mt-6">
-                        <Card className="mb-4 shadow-sm">
+                        <Card className="mb-4 shadow-sm bg-[#eefcff]">
                             <CardBody>
                                 {taskContent[selectedTask]}
                             </CardBody>
                         </Card>
                     </div>
                 </div>
-            </div>
+            </div >
         </>
     );
 };

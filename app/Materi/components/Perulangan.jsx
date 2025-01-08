@@ -9,8 +9,8 @@ import { PerulanganTableLabel, PerulanganTableIsian } from "@/components/dataPer
 function Task5() {
     return (
         <div className="w-full my-4 space-y-4">
-            <Typography variant="paragraph" className="text-justify indent-8">
-                Perulangan adalah proses menjalankan blok kode secara berulang sampai kondisi tertentu tercapai. For loop digunakan ketika jumlah perulangan sudah diketahui, sedangkan while loop digunakan jika perulangan berlangsung selama kondisi tertentu terpenuhi. Nested loop adalah perulangan di dalam perulangan lain.
+            <Typography variant="lead" className="text-justify indent-8">
+                <span className="font-bold"> Perulangan</span> adalah proses menjalankan blok kode secara berulang sampai kondisi tertentu tercapai. For loop digunakan ketika jumlah perulangan sudah diketahui, sedangkan while loop digunakan jika perulangan berlangsung selama kondisi tertentu terpenuhi. Nested loop adalah perulangan di dalam perulangan lain.
             </Typography>
             <Card className="h-full w-full overflow-scroll">
                 <table className="w-full min-w-max table-auto text-left">
@@ -91,7 +91,7 @@ function Task5() {
                 </table>
             </Card>
             <div className="w-full my-4">
-                <Typography variant="paragraph" className="text-justify indent-8">
+                <Typography variant="lead" className="text-justify indent-8">
                     Contoh program perulangan adalah mencetak angka 1 hingga 10 menggunakan for loop:
                 </Typography>
                 <div className="flex items-center justify-center gap-0">
